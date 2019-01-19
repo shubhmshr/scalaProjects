@@ -36,8 +36,6 @@ object diabetes {
     val spark = SparkSession.builder().appName("diabetes data").getOrCreate()
 
 
-    def build
-
     val diabSchema = ScalaReflection.schemaFor[diabetesCase].dataType.asInstanceOf[StructType]
     val dischargeSchema = ScalaReflection.schemaFor[dischargeCase].dataType.asInstanceOf[StructType]
     val admissionSourceSchema = ScalaReflection.schemaFor[admissionSourceCase].dataType.asInstanceOf[StructType]
