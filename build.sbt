@@ -37,25 +37,3 @@ libraryDependencies += "org.jfree" % "jfreechart" % "1.5.0"
 libraryDependencies += "org.apache.spark" %% "spark-streaming" % "2.4.0" % "provided"
 // https://mvnrepository.com/artifact/org.apache.spark/spark-streaming
 libraryDependencies += "org.apache.spark" %% "spark-streaming" % "2.4.0" % "provided"
-
-
-
-id,int,false
-name,string,true
-
-
-//   val sc = new SparkContext(new SparkConf().setAppName("Spark Count").setMaster("local"))
-//val tokenized1 = sc.textFile(SchemaFilePath)
-//val tokenized2=tokenized1.map(_.split(",").map(_.trim))
-//var tokenized4=tokenized2.map(_.toSeq.toList)
-//
-//val result=for(a<-tokenized4)yield StructField(a(0),CatalystSqlParser.parseDataType(a(1)),a(2).toBoolean)
-//val customschema=StructType(result.collect)
-//println("custom schema :"+customschema.foreach(println))//   val sc = new SparkContext(new SparkConf().setAppName("Spark Count").setMaster("local"))
-////val tokenized1 = sc.textFile(SchemaFilePath)
-////val tokenized2=tokenized1.map(_.split(",").map(_.trim))
-////var tokenized4=tokenized2.map(_.toSeq.toList)
-////
-////val result=for(a<-tokenized4)yield StructField(a(0),CatalystSqlParser.parseDataType(a(1)),a(2).toBoolean)
-////val customschema=StructType(result.collect)
-////println("custom schema :"+customschema.foreach(println))
